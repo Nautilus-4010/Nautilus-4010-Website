@@ -66,26 +66,26 @@
       <h2 class="redes-sociales">¡S&iacute;guenos en redes sociales!</h2>
         <div class="flexbox">
           <div class="redes-sociales">
-            <a href="https://www.instagram.com/hardlus_15704/" target="_blank">
+            <a href="https://www.instagram.com/nautilus_4010/" target="_blank">
               <div class="flexbox">
                 <img src="img/iconos/instagram.svg" alt="Siguenos en Instagram">
-                <h6 class="link">hardlus_15704</h6>
+                <h6 class="link">nautilus_4010</h6>
               </div>
             </a>
           </div>
           <div class="redes-sociales">
-            <a href="https://twitter.com/Hardlus15704" target="_blank">
+            <a href="https://twitter.com/frcnautilus4010" target="_blank">
               <div class="flexbox">
                 <img src="img/iconos/twitter.svg" alt="Siguenos en Twitter">
-                <h6 class="link">@Hardlus15704</h6>
+                <h6 class="link">@FRCNautilus4010</h6>
               </div>
             </a>
           </div>
           <div class="redes-sociales">
-            <a href="https://www.facebook.com/Hardlus15704/" target="_blank">
+            <a href="https://www.facebook.com/nautilus4010/" target="_blank">
               <div class="flexbox">
                 <img src="img/iconos/facebook.svg" alt="Siguenos en Facebook">
-                <h6 class="link">Hardlus 15704</h6>
+                <h6 class="link">Nautilus 4010</h6>
               </div>
             </a>
           </div>

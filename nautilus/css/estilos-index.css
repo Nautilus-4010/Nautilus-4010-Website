@@ -163,6 +163,7 @@ h6.link {
 #galeria img {
   width: 45%;
   min-width: 300px;
+  box-shadow: 0 0 3px #333;
   margin:1.5rem;
 }
 
