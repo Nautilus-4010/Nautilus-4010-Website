@@ -77,7 +77,7 @@
         <div class="fotito">
           <img src="img/equipo/estudiante/cinthya.jpg" alt="Cinthya">
           <h3>Cinthya</h3>
-          <p>Ingeniaría / Sociales</p>
+          <p>Ingeniería / Sociales</p>
         </div>
         <div class="fotito">
           <img src="img/equipo/estudiante/igna.jpg" alt="Igna">
