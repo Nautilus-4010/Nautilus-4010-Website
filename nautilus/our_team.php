@@ -187,7 +187,7 @@
         <div class="fotito">
           <img src="img/equipo/estudiante/estefania.jpg" alt="Estefanía">
           <h3>Estefanía</h3>
-          <p>Sociales</p>
+          <p>Sociales / Ingeniería / Finanzas</p>
         </div>
         <div class="fotito">
           <img src="img/equipo/estudiante/karen.jpg" alt="Karen">
@@ -333,6 +333,16 @@
           <img src="img/equipo/coach/cinthya.jpg" alt="Cinthya">
           <h3>Cinthya</h3>
           <p>Head Coach</p>
+        </div>
+        <div class="fotito">
+          <img src="img/equipo/coach/manu.jpg" alt="Manuel">
+          <h3>Manuel</h3>
+          <p>Coach</p>
+        </div>
+        <div class="fotito">
+          <img src="img/equipo/coach/nava.jpg" alt="Ricardo">
+          <h3>Ricardo</h3>
+          <p>Coach</p>
         </div>
       </div>
     </section>
