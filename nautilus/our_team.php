@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Nautilus 4010 es el equipo de robótica participante en FRC (FIRST Robotics Competition) del Tecnológico de Monterrey Campus Ciudad de México, que difunde la ciencia y tecnología en su comunidad.">
-    <meta name="keywords" content="FRC, robots, robótica, México, equipo, FIRST">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php require('header.php'); ?>
     <title>Nautilus 4010 | Equipo</title>
-    <link rel="stylesheet" type="text/css" href="css/Reset.css">
-    <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/estilos-our-team.css">
-    <link rel="icon" type="image/png" href="img/logos/nautilus.png">
   </head>
   <body style="background-color: #040000;">
     
@@ -350,12 +344,10 @@
 
     <footer>
 
-    <?php include "footer.php"; ?>
+      <?php include "footer.php"; ?>
 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
-
+    </footer>
     <!-- Scripts -->
-    <script src="js/script-index.js" charset="utf-8" defer></script>
     <!-- Scripts -->
   </body>
 </html>

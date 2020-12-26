@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Nautilus 4010 es el equipo de robótica participante en FRC (FIRST Robotics Competition) del Tecnológico de Monterrey Campus Ciudad de México, que difunde la ciencia y tecnología en su comunidad.">
-    <meta name="keywords" content="FRC, robots, robótica, México, equipo, FIRST">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php require('header.php'); ?>
     <title>Nautilus 4010</title>
-    <link rel="stylesheet" type="text/css" href="css/Reset.css">
-    <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/estilos-index.css">
-    <link rel="icon" type="image/png" href="img/logos/nautilus.png">
   </head>
   <body style="background-color: #040000;">
     
@@ -94,6 +88,21 @@
     </section>
     <!-- Redes sociales -->
 
+    <!-- Patrocinadores -->
+    <section id="patrocinadores">
+      <div class="centre">
+        <div class="flexbox primer-nivel">
+          <img src="img/patrocinadores/Qualcomm.png" alt="Qualcomm">
+          <img src="img/patrocinadores/motorola-solutions-foundation.png" alt="Motorola Solutions Foundation">
+          <img src="img/patrocinadores/tec_monterrey.png" alt="Tecnológico de Monterrey" id="logo-tec">
+          <img src="img/patrocinadores/fundacion-azteca.png" alt="Fundación Azteca de Grupo Salinas">
+          <img src="img/patrocinadores/ni-logo.jpg" alt="National Instruments">
+          <img src="img/patrocinadores/six_flags.png" alt="Six Flags México">
+        </div>
+      </div>
+    </section>
+    <!-- Patrocinadores -->
+
     <!-- Galeria -->
     <section id="galeria">
       <div class="flexbox">
@@ -108,12 +117,12 @@
     <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
       
       <div class="centre firma flexbox">
-        <a href="https://github.com/DiegoMont" class="firma">&lt;/&gt; with <span id="corazon" class="firma">&#9829;</span> by <span class="firma">DiegoMont</span></a>
+        <a href="https://diegomont.github.io" class="firma">&lt;/&gt; with <span id="corazon" class="firma">&#9829;</span> by <span class="firma">DiegoMont</span></a>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/script-index.js" charset="utf-8" defer></script>
+    <script src="js/script-index.js" charset="utf-8"></script>
     <!-- Scripts -->
   </body>
 </html>
