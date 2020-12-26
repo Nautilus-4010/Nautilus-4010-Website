@@ -56,7 +56,7 @@
     <!-- Patrocinadores -->
     <section id="patrocinadores">
       <div class="centre">
-        <h2>Alianzas estratégicas</h2>
+        <h2>Alianzas Estratégicas</h2>
         <div class="flexbox primer-nivel">
           <img src="img/patrocinadores/Qualcomm.png" alt="Qualcomm">
           <img src="img/patrocinadores/motorola-solutions-foundation.png" alt="Motorola Solutions Foundation">
