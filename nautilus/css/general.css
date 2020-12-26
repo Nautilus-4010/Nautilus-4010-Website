@@ -66,6 +66,10 @@ footer {
   padding: 0.5rem 0;
 }
 
+.texto-amarillo {
+  color: var(--amarillo);
+}
+
 a.btn-link {
   display: block;
   padding: 0.5rem 1rem;

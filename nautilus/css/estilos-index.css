@@ -172,3 +172,28 @@ h6.link {
     width: 90%;
   }
 }
+
+/***************************************
+*                                      *
+*           Patrocinadores             *
+*                                      *
+****************************************/
+
+#patrocinadores {
+  background-color: #fff;
+}
+
+#patrocinadores img {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.primer-nivel img {
+  width: 30%;
+  min-width: 140px;
+}
+
+#logo-tec {
+  width: 20%;
+  min-width: 95px;
+}
