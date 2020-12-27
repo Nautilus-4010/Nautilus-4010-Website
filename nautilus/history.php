@@ -14,7 +14,7 @@
     <!-- Header -->
     <header>
       <div class="centre flexbox">
-        <h1>Historia</h1>
+        <h1><span class="texto-amarillo">More</span> than robots!</h1>
       </div>
     </header>
     <!-- Header -->

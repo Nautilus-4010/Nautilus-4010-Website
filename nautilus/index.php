@@ -54,6 +54,38 @@
     </section>
     <!-- About us -->
 
+    <!-- Areas -->
+    <section id="areas">
+      <div class="centre">
+        <h2 class="texto-amarillo">Áreas del equipo</h2>
+        <div class="area" id="fondo-ingenieria">
+          <div>
+            <h3>Ingeniería</h3>
+            <p>CAD, mecánica, programación y electrónica, FLL y FTC.</p>
+          </div>
+        </div>
+        <div class="area" id="fondo-negocios">
+          <div>
+            <h3>Negocios</h3>
+            <p>Patrocinios, finanzas, logística, organización de eventos.</p>
+          </div>
+        </div>
+        <div class="area" id="fondo-axm">
+          <div>
+            <h3>Acciones X México</h3>
+            <p>Recursos humanos, reclutamiento, alianzas estratégicas, proyectos sociales.</p>
+          </div>
+        </div>
+        <div class="area" id="fondo-comunicacion">
+          <div>
+            <h3>Comunicación</h3>
+            <p>Redes sociales, documentación, imagen, fotografía.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Areas -->
+
     <!-- Redes sociales -->
     <section class="redes-sociales">
       <div class="centre">
@@ -105,6 +137,7 @@
 
     <!-- Galeria -->
     <section id="galeria">
+      <h2><span class="texto-amarillo">More</span> than robots!</h2>
       <div class="flexbox">
       <img src="img/landing-page/girl-stem.jpg" alt="Nuevas miembro del equipo tomando sus capacitaciones de ingeniería.">
       <img src="img/landing-page/electronica-taller.jpg" alt="El equipo de ingeniería trabajando en la electrónica del robot.">
