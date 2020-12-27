@@ -167,6 +167,11 @@ h6.link {
   margin:1.5rem;
 }
 
+#galeria h2 {
+  color: var(--negro);
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1080px) {
   #galeria img {
     width: 90%;
@@ -196,4 +201,81 @@ h6.link {
 #logo-tec {
   width: 20%;
   min-width: 95px;
+}
+
+/***************************************
+*                                      *
+*           Areas del equipo           *
+*                                      *
+****************************************/
+
+.area {
+  height: 50vh;
+  min-height: 200px;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.area h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 3rem 0 1.5rem;
+}
+
+.area div {
+  background-color: rgba(4, 0, 0, 0.2);
+  max-width: 100%;
+  height: 100%;
+}
+
+.area p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#areas {
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
+}
+
+#fondo-ingenieria {
+  background-image: url(../img/landing-page/ingenieria.jpg);
+}
+
+#fondo-negocios {
+  background-image: url(../img/landing-page/negocios.jpg);
+  background-position-y: 40%;
+}
+
+#fondo-axm {
+  background-image: url(../img/landing-page/axm.jpg);
+  background-position-y: 30%;
+}
+
+#fondo-comunicacion {
+  background-image: url(../img/landing-page/comunicacion.jpg);
+  background-position-y: 30%;
+}
+
+#areas h2 {
+  font-weight: 300;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 450px) {
+  #fondo-comunicacion h3, #fondo-axm h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #fondo-comunicacion h3, #fondo-axm h3 {
+    font-size: 2.5rem;
+  }
 }
