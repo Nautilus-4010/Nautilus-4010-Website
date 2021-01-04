@@ -138,9 +138,23 @@
     <!-- Galeria -->
     <section id="galeria">
       <h2><span class="texto-amarillo">More</span> than robots!</h2>
-      <div class="flexbox">
+      <!--<div class="flexbox">
       <img src="img/landing-page/girl-stem.jpg" alt="Nuevas miembro del equipo tomando sus capacitaciones de ingeniería.">
       <img src="img/landing-page/electronica-taller.jpg" alt="El equipo de ingeniería trabajando en la electrónica del robot.">
+      </div>-->
+      <div class="carousel centre">
+        <img src="img/iconos/left-arrow.svg" alt="Foto anterior" class="btn" id="foto_anterior">
+        <img src="img/iconos/right-arrow.svg" alt="Foto siguiente" class="btn" id="foto_siguiente">
+        <div class="slider">
+          <img src="img/landing-page/trabajo-taller.jpg" alt="">
+          <img src="img/landing-page/driver-station.jpg" alt="">
+          <img src="img/landing-page/taller-mecanica.jpg" alt="">
+          <img src="img/landing-page/electronica-taller.jpg" alt="">
+          <img src="img/landing-page/girl-stem.jpg" alt="">
+          <img src="img/landing-page/servicio-social.jpg" alt="">
+          <img src="img/landing-page/trabajo-taller.jpg" alt="">
+          <img src="img/landing-page/driver-station.jpg" alt="">
+        </div>
       </div>
     </section>
     <!-- Galeria -->
