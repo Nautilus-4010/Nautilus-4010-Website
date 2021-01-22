@@ -223,6 +223,16 @@
           <h3>Arturo</h3>
           <p>Ingeniería / Sociales / Finanzas</p>
         </div>
+        <div class="fotito">
+          <img src="img/equipo/estudiante/danielaledesma.jpg" alt="Daniela">
+          <h3>Daniela</h3>
+          <p>Sociales / Finanzas</p>
+        </div>
+        <div class="fotito">
+          <img src="img/equipo/estudiante/natalia.jpg" alt="Natalia">
+          <h3>Natalia</h3>
+          <p>Ingeniería / Sociales</p>
+        </div>
       </div>
     </section>
     <!-- Estudiantes -->
