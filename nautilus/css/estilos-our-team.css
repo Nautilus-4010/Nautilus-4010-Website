@@ -50,6 +50,7 @@ header p {
 
 .fotito img {
   box-shadow: 0 0 3px #333;
+  border-radius: 7px;
 }
 
 .fotito p {
@@ -57,25 +58,24 @@ header p {
   text-align: center;
 }
 
-#estudiantes {
-  background-color: var(--amarillo);
-}
-
-#mentores {
-  background-color: var(--gris);
-}
-
-#coaches {
+#estudiantes, #mentores, #coaches {
+  border-top: 1rem solid var(--amarillo);
   background-color: var(--negro-fondo);
 }
 
-#mentores h2, #coaches h2 {
+#mentores h2, #coaches h2, #estudiantes h2 {
+  color: var(--amarillo);
   text-align: left;
+  text-decoration: underline;
   font-weight: 400;
   margin-left: 1rem;
   margin-bottom: 2rem;
 }
 
-#coaches .fotito h3, #coaches .fotito p, #coaches h2 {
+.fotito h3 {
+  color: var(--amarillo);
+}
+
+.fotito p {
   color: var(--gris);
 }
