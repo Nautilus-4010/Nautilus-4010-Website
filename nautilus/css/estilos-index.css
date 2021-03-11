@@ -168,10 +168,18 @@ h6.link {
 }
 
 #foto_anterior, #foto_siguiente {
+  background-color: var(--amarillo);
+  opacity: 0.5;
   position: absolute;
   top: 50%;
   z-index: 10;
-  width: 1.5rem;
+  width: 2rem;
+  padding: 0.45rem;
+  border-radius: 50%;
+}
+
+#foto_anterior:hover, #foto_siguiente:hover {
+  opacity: 1;
 }
 
 #foto_anterior {
@@ -183,7 +191,7 @@ h6.link {
 }
 
 #galeria {
-  background-color: var(--gris);
+  background-color: var(--negro-fondo);
 }
 
 #galeria img {
@@ -194,7 +202,7 @@ h6.link {
 }
 
 #galeria h2 {
-  color: var(--negro);
+  color: var(--gris);
   font-weight: 400;
   margin: 2rem auto;
 }
