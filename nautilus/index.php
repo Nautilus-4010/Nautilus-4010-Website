@@ -162,6 +162,12 @@
     <footer>
 
     <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+
+    <div class="centre" id="site-map">
+      <a href="./index.php">Inicio</a>
+      <a href="./history.php">Historia</a>
+      <a href="./our_team.php">Equipo</a>
+    </div>
       
       <div class="centre firma flexbox">
         <a href="https://diegomont.github.io" class="firma">&lt;/&gt; with <span id="corazon" class="firma">&#9829;</span> by <span class="firma">DiegoMont</span></a>
