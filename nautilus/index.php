@@ -89,7 +89,7 @@
     <!-- Redes sociales -->
     <section class="redes-sociales">
       <div class="centre">
-      <h2 class="redes-sociales">¡S&iacute;guenos en redes sociales!</h2>
+      <h2 class="redes-sociales">¡<span class="texto-amarillo">Síguenos</span> en redes sociales!</h2>
         <div class="flexbox">
           <div class="redes-sociales">
             <a href="https://www.instagram.com/nautilus_4010/" target="_blank">

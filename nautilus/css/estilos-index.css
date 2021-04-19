@@ -8,6 +8,10 @@ nav.sin-fondo {
   background-color: rgba(4, 0, 0, 0);
 }
 
+#checkbox-menu:checked ~ #link-logo {
+  background-color: var(--negro);
+}
+
 /**************************************
 *                                     *
 *     Header con fotos del equipo     *
@@ -137,17 +141,14 @@ nav.sin-fondo {
 *****************************************/
 
 section.redes-sociales {
-  background-color: var(--amarillo);
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
 }
 
 h2.redes-sociales {
-  color: var(--negro);
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-h6.link {
-  color: var(--negro);
+  color: var(--gris);
+  font-weight: 300;
+  margin-bottom: 3rem;
 }
 
 /****************************************

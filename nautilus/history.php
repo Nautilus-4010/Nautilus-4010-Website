@@ -81,7 +81,8 @@
     <!-- FTC -->
     <section id="ftc">
       <div class="centre">
-        <h2><span class="hardlus">Hardlus 15704</span> y <span class="naubots">Naubots 15706</span></h2>
+        <!-- <h2><span class="hardlus">Hardlus 15704</span> y <span class="naubots">Naubots 15706</span></h2> -->
+        <h2>FTC</h2>
         <p>Conoce a nuestros equipos de FTC formados por los nuevos integrantes del equipo.</p>
         <div class="flexbox">
           <a href="hardlus15704/index.php" target="_blank" class="link-ftc">
