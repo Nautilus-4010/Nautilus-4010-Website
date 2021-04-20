@@ -150,14 +150,16 @@ header div {
 
 #ftc .flexbox {
   align-items: stretch;
-  margin-bottom: 2rem;
+  justify-content: space-between;
+  max-width: 35rem;
+  margin:0 auto 2rem;
 }
 
 a.link-ftc {
   background-color: var(--blanco-texto);
   display: block;
   box-sizing: border-box;
-  width: 30%;
+  width: 45%;
   min-width: 120px;
   padding: 0.5rem 1rem;
   border-radius: 1rem;

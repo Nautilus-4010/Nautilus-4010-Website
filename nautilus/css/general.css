@@ -122,11 +122,11 @@ nav .btn-link:hover {
   }
 
   a.btn-link {
-    background-color: var(--negro);
+    background-color: var(--negro-fondo);
     text-align: center;
     width: 100%;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--amarillo);
+    border-bottom: 2px solid var(--amarillo);
     margin: 0;
   }
 
