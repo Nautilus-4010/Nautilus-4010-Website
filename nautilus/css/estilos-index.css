@@ -35,6 +35,10 @@ nav.sin-fondo {
   position: absolute;
 }
 
+#container-logo {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 #foto-regional-monterrey {
   background-image: url(../img/landing-page/regional-monterrey.jpg);
   background-position: bottom center;
