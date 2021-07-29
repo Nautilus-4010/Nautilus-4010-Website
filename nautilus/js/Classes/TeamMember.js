@@ -3,11 +3,11 @@ class TeamMember {
   COACH_ROLE = "coach";
   MENTOR_ROLE = "mentor";
 
-  constructor(name, photoUrl, areas, nickname){
+  constructor(name, photoUrl, areas, nickname = ""){
     this._name = name;
     this._photoUrl = photoUrl;
     this._areas = areas;
-    this._nickname = nickname;
+    this._nickname = (nickname == "" ? this._name: nickname);
     this._role = "";
   }
 
