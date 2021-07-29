@@ -1,7 +1,7 @@
 function main() {
   const teamRooster2021 = load2021TeamRooster();
   const teamRooster2020 = load2020TeamRooster();
-  teamRooster2021.render();
+  teamRooster2020.render();
 }
 
 const load2021TeamRooster = function(){
