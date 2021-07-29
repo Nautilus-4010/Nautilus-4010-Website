@@ -1,14 +1,33 @@
+const roosterNavBtns = document.querySelectorAll("#year-btns button");
+
 function main() {
-  const teamRooster2021 = load2021TeamRooster();
-  const teamRooster2020 = load2020TeamRooster();
-  teamRooster2020.render();
+  const teamRoosters = new Map()
+  teamRoosters.set(2021, load2021TeamRooster());
+  teamRoosters.set(2020, load2020TeamRooster());
+
+  for (const btn of roosterNavBtns) {
+    btn.onclick = function(){
+      const btnYear = Number(btn.value);
+      const respectiveRooster = teamRoosters.get(btnYear);
+      higlightBtnAndRenderRooster(btn, respectiveRooster);
+    }
+  }
+
+  higlightBtnAndRenderRooster(roosterNavBtns[0], teamRoosters.get(2021));
 }
+
+const higlightBtnAndRenderRooster = function(button, rooster){
+  for (const btn of roosterNavBtns) {
+    btn.classList.remove("active");
+  }
+  button.classList.add("active");
+  rooster.render();
+};
 
 const load2021TeamRooster = function(){
   const students = [
     new Student("Fernando", "fernando.jpg", [TeamAreas.MESA])
   ];
-  console.log(students);
 
   const mentors = [
     new Mentor("Regina", "regina.jpg", [TeamAreas.SOCIALES])
@@ -27,7 +46,6 @@ const load2020TeamRooster = function(){
     new Student("Sara", "sara.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA], "Sarita"),
     new Student("Camila", "camila.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA], "Mila")
   ];
-  console.log(students);
 
   const mentors = [
     new Mentor("Alejandro", "alex.jpg", [TeamAreas.INGENIERIA], "Alex")
