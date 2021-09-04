@@ -1,5 +1,8 @@
 class MainSlider {
   IMAGES = [
+    "equipo-biblioteca.jpg",
+    "logo-taller.jpg",
+    "regreso-taller.jpg",
     "driver-station.jpg",
     "taller-mecanica.jpg",
     "electronica-taller.jpg",
