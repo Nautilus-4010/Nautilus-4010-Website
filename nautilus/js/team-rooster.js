@@ -44,7 +44,8 @@ const load2021TeamRooster = function(){
 const load2020TeamRooster = function(){
   const students = [
     new Student("Sara", "sara.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA], "Sarita"),
-    new Student("Camila", "camila.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA], "Mila")
+    new Student("Camila", "camila.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA], "Mila"),
+    new Student("Fernando", "fernando.jpg", [TeamAreas.MESA, TeamAreas.INGENIERIA])
   ];
 
   const mentors = [
