@@ -23,8 +23,8 @@
     <!-- Navbar Team Roosters -->
     <section id="year-btns">
       <div class="centre flexbox">
-      <button type="button" value="2021">2021</button>
-        <button type="button" value="2020">2020</button>
+        <button type="button" value="2022">2022</button>
+        <button type="button" value="2021">2021</button>
       </div>
     </section>
     <!-- Navbar Team Roosters -->
