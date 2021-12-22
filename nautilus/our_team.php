@@ -65,6 +65,8 @@
     <script src="./js/Classes/Student.js"></script>
     <script src="./js/Classes/TeamAreas.js"></script>
     <script src="./js/Classes/TeamRooster.js"></script>
+    <script src="./js/team-rooster-2021.js"></script>
+    <script src="./js/team-rooster-2022.js"></script>
     <script src="./js/team-rooster.js"></script>
     <!-- Scripts -->
   </body>
