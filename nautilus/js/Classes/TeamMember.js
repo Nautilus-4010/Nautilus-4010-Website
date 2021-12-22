@@ -38,7 +38,7 @@ class TeamMember {
   getCardHTML(year) {
     let HTMLTemplate = `
     <div class="fotito">
-    <img src="img/equipo/${year}/${this.role}/${this.photoUrl}" alt="${this.nickname}">
+    <img src="img/equipo/${year}/${this.role}/${this.photoUrl}" title="${this.nickname}">
     <h3>${this.name}</h3>`;
     HTMLTemplate += this.formatAreas();
     HTMLTemplate += "</div>";
