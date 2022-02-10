@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+:root {
+  --negro-fondo: #191919;
+  --negro: #040000;
+  --amarillo: #f2df0c;
+  --gris: #b5b5b4;
+}
+
+* {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  background-color: var(--negro);
+  width: 100%;
+  z-index: 100;
+}
+
+footer {
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
+}
+
+.iconos-redes {
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.nav-grid {
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+}
+
+.texto-amarillo {
+  color: var(--amarillo);
+}
+
+a.btn-link {
+  display: block;
+  margin: 0 1rem;
+}
+
+div.redes-sociales {
+  margin: 1rem;
+}
+
+nav a {
+  color: var(--amarillo);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+nav .btn-link:hover {
+  text-decoration: underline;
+}
+
+.redes-sociales img {
+  width: 2rem;
+  margin-right: 0.3rem;
+}
+
+#hamburguer-menu {
+  display: none;
+}
+
+#link-logo img {
+  box-sizing: border-box;
+  display: block;
+  height: 3rem;
+  width: auto;
+  padding: 0.75rem 0;
+}
+
+#site-map a {
+  color: var(--gris);
+  font-weight: 300;
+  display: block;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+  }
+
+  a.btn-link {
+    background-color: var(--negro-fondo);
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--amarillo);
+    margin: 0;
+  }
+
+  #hamburguer-menu {
+    display: block;
+  }
+
+  #link-logo {
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: space-between;
+  }
+
+  #link-logo a, #link-logo label {
+    margin: 0 1rem;
+  }
+
+  #link-izquierdo {
+    grid-area: 2 / 1 / span 1 / span 1;
+    display: none;
+  }
+
+  #link-derecho {
+    grid-area: 3 / 1 / span 1 / span 1;
+    display: none;
+  }
+
+  #checkbox-menu:checked ~ #link-izquierdo, #checkbox-menu:checked ~ #link-derecho {
+    display: block;
+  }
+}

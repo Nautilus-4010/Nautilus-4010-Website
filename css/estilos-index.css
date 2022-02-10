@@ -1,0 +1,295 @@
+/**************************************
+*                                     *
+*                Navbar               *
+*                                     *
+***************************************/
+
+nav.sin-fondo {
+  background-color: rgba(4, 0, 0, 0);
+}
+
+#checkbox-menu:checked ~ #link-logo {
+  background-color: var(--negro);
+}
+
+/**************************************
+*                                     *
+*     Header con fotos del equipo     *
+*                                     *
+***************************************/
+
+#fotos-equipo {
+  height: 100vh;
+  max-height: 100vw;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: -5;
+}
+
+.foto-pantalla {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vw;
+  position: absolute;
+}
+
+#container-logo {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#foto-regional-monterrey {
+  background-image: url(../img/landing-page/regional-monterrey.jpg);
+  background-position: bottom center;
+}
+
+#foto-gradas {
+  background-image: url(../img/landing-page/porra-gradas.jpg);
+  background-position: 50% 100%;
+  opacity: 0;
+  animation-name: esconder-foto;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes esconder-foto {
+  0% { opacity: 0; }
+  45% { opacity: 0; }
+  55% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+#logo-grande {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#container-logo .centre {
+  margin-top: 15vh;
+}
+
+/**************************************
+*                                     *
+*              Abstract               *
+*                                     *
+***************************************/
+
+#abstract {
+  background-image: url(../img/landing-page/primo-taller.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.abstract-text {
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 3px #000;
+  width: 40%;
+  min-width: 300px;
+  padding: 2rem 1.7rem;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.abstract-text h1 {
+  color: var(--negro);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+  .abstract-text {
+    width: 90%;
+    margin: 30vh auto 0;
+  }
+
+  #abstract {
+    background-position-x: 30%;
+  }
+}
+
+/**************************************
+*                                     *
+*              About us               *
+*                                     *
+***************************************/
+
+.card {
+  width: 25%;
+  min-width: 220px;
+  align-self: flex-start;
+  margin: 1.5rem 1rem;
+}
+
+#about-us {
+  background-color: var(--negro-fondo);
+}
+
+#about-us h3 {
+  color: var(--amarillo);
+  font-weight: 400;
+}
+
+#about-us p {
+  color: var(--blanco-texto);
+  font-weight: 300;
+}
+
+/****************************************
+*                                       *
+*             Redes sociales            *
+*                                       *
+*****************************************/
+
+section.redes-sociales {
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
+}
+
+h2.redes-sociales {
+  color: var(--gris);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+/****************************************
+*                                       *
+*                Galeria                *
+*                                       *
+*****************************************/
+
+.galeria-fotos {
+  width: 92vw;
+  display: grid;
+  grid: auto-flow / repeat(3, 28vw);
+  gap: 4vw;
+  margin: 4rem auto 0;
+}
+
+#galeria {
+  background-color: var(--negro-fondo);
+}
+
+#galeria h2 {
+  color: var(--gris);
+  font-weight: 400;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 893px) {
+  .galeria-fotos {
+    grid-template-columns: repeat(2, 40vw);
+    gap: 12vw;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .galeria-fotos {
+    grid-template-columns: 92vw;
+  }
+}
+
+/***************************************
+*                                      *
+*           Patrocinadores             *
+*                                      *
+****************************************/
+
+#patrocinadores {
+  background-color: #fff;
+}
+
+#patrocinadores img {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.primer-nivel img {
+  width: 30%;
+  min-width: 140px;
+}
+
+#logo-tec {
+  width: 20%;
+  min-width: 95px;
+}
+
+/***************************************
+*                                      *
+*           Areas del equipo           *
+*                                      *
+****************************************/
+
+.area {
+  height: 50vh;
+  min-height: 200px;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.area h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 3rem 0 1.5rem;
+}
+
+.area div {
+  background-color: rgba(4, 0, 0, 0.2);
+  max-width: 100%;
+  height: 100%;
+}
+
+.area p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#areas {
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
+}
+
+#fondo-ingenieria {
+  background-image: url(../img/landing-page/ingenieria.jpg);
+}
+
+#fondo-negocios {
+  background-image: url(../img/landing-page/negocios.jpg);
+  background-position-y: 40%;
+}
+
+#fondo-axm {
+  background-image: url(../img/landing-page/axm.jpg);
+  background-position-y: 30%;
+}
+
+#fondo-comunicacion {
+  background-image: url(../img/landing-page/comunicacion.jpg);
+  background-position-y: 30%;
+}
+
+#areas h2 {
+  font-weight: 300;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 450px) {
+  #fondo-comunicacion h3, #fondo-axm h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #fondo-comunicacion h3, #fondo-axm h3 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,60 @@
+/***************************************
+*                                      *
+*               HEADER                 *
+*                                      *
+****************************************/
+
+h1 {
+  color: var(--amarillo);
+  font-size: 2rem;
+  text-align: justify;
+  font-weight: 400;
+  margin: 0;
+}
+
+header, #reglas {
+  background-color: var(--negro-fondo);
+}
+
+header img {
+  height: 4rem;
+  width: auto;
+  margin: 0;
+  margin-right: 0.75rem;
+}
+
+.header-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************************************
+*                                      *
+*             CARTA REGLAS             *
+*                                      *
+****************************************/
+
+h2 {
+  color: var(--gris);
+  font-weight: 400;
+}
+
+li {
+  color: var(--gris);
+  margin: 1rem 0;
+}
+
+ol, ul {
+  list-style-position: outside;
+  margin: 0 2rem;
+}
+
+#reglas {
+  padding-top: 0;
+}
+
+#reglas div {
+  border: 1rem solid var(--blanco-texto);
+  border-radius: 1rem;
+}
