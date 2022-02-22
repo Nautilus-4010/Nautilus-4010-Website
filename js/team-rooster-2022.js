@@ -4,7 +4,7 @@ const load2022TeamRooster = function(){
     ];
   
     const mentors = [
-      new Mentor("Regina", "regina.jpg", [TeamAreas.SOCIALES])
+      new Mentor("Diego", "dieguito.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES])
     ];
   
     const coaches = [
