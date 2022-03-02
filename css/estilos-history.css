@@ -88,3 +88,61 @@ header div {
   color: var(--blanco-texto);
   font-weight: 300;
 }
+
+/****************************************
+*                                       *
+*             Generations               *
+*                                       *
+*****************************************/
+
+.img-filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 56.25vw;
+}
+
+.info-regionales {
+  align-self: flex-start;
+}
+
+.info-temporada {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-temporada {
+  align-self: flex-end;
+  width: 20%;
+}
+
+.info-regionales li {
+  color: var(--blanco-texto);
+}
+
+.info-regionales p {
+  font-size: 1.2rem;
+}
+
+.info-temporada h2 {
+  color: var(--amarillo);
+  padding: 1.5rem 0;
+}
+
+.info-temporada .flexbox {
+  justify-content: space-between;
+  height: calc(56.25vw - 6rem);
+}
+
+.info-temporada .team-img {
+  display: none;
+}
+
+.info-temporada h2 span, .info-regionales p {
+  color: var(--gris);
+}
+
+.logo-temporada img {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto auto 0;
+}
