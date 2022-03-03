@@ -14,19 +14,28 @@
 *                                       *
 *****************************************/
 
-header img {
-    box-sizing: border-box;
-    background-color: #fff;
-    width: 20%;
-    padding: 1rem;
+header {
+    background-color: var(--negro-fondo);
 }
 
 header p {
     color: var(--gris);
+    margin-left: 0;
 }
 
-header .flexbox {
-    justify-content: space-between;
+header .centre {
+    background-image: url("../img/logos/ftc/ftc.png");
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 690px) {
+    header .centre {
+        padding-bottom: 25vw;
+        background-position: center bottom;
+        background-size: 25vw auto;
+    }
 }
 
 /****************************************
@@ -43,6 +52,7 @@ header .flexbox {
 }
 
 #equipos-ftc {
+    background-color: var(--negro-fondo);
     border-top: 0.3rem solid var(--amarillo);
 }
 
