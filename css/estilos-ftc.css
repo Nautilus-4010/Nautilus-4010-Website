@@ -86,3 +86,60 @@ a.link-ftc:hover {
         width: 35vw;
     }
 }
+
+/****************************************
+*                                       *
+*              Like a girl              *
+*                                       *
+*****************************************/
+
+#lag {
+    background-size: cover;
+    background-image: url("../img/ftc/poster_lag.png");
+    box-sizing: border-box;
+    height: 56.25vw;
+}
+
+#lag h2 {
+    color: #000;
+    font-size: clamp(2.5rem, 10vw, 7rem);
+}
+
+#lag span {
+    color: var(--naranja-naubots);
+}
+
+@media screen and (max-width: 468px) {
+    #lag {
+        padding: 1rem 0;
+    }
+}
+
+/****************************************
+*                                       *
+*            Inspire Exchange           *
+*                                       *
+*****************************************/
+
+.red-container {
+    background-color: var(--rojo-hardlus);
+    padding: 1rem;
+}
+
+.red-container p {
+    color: var(--blanco-texto);
+}
+
+#inspire-exchange {
+    background-color: #000;
+}
+
+#inspire-exchange h2 {
+    color: var(--gris-hardlus);
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    text-align: left;
+}
+
+#inspire-exchange .centre p {
+    color: var(--gris-hardlus);
+}
