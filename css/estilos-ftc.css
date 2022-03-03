@@ -46,7 +46,7 @@ header .centre {
 
 .ftc-teams-links {
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 65% 1fr;
     column-gap: 1rem;
     margin-bottom: 3.5rem;
 }
