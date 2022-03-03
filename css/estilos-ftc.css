@@ -6,4 +6,83 @@
 
 #link-ftc {
     text-decoration: underline;
-  }
+}
+
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+header img {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 20%;
+    padding: 1rem;
+}
+
+header p {
+    color: var(--gris);
+}
+
+header .flexbox {
+    justify-content: space-between;
+}
+
+/****************************************
+*                                       *
+*           Naubots y Hardlus           *
+*                                       *
+*****************************************/
+
+.ftc-teams-links {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+#equipos-ftc {
+    border-top: 0.3rem solid var(--amarillo);
+}
+
+#equipos-ftc h2 {
+    color: var(--amarillo);
+    font-size: clamp(2rem, 10vw, 5.5rem);
+    font-weight: 700;
+    text-align: left;
+}
+
+#equipos-ftc .ftc-btns {
+    justify-content: right;
+}
+
+#equipos-ftc .flexbox > img {
+    width: 50%;
+    min-width: 300px;
+}
+  
+a.link-ftc {
+    background-color: var(--blanco-texto);
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    opacity: 0.85;
+}
+  
+a.link-ftc:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1016px) {
+
+    .ftc-teams-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a.link-ftc {
+        width: 35vw;
+    }
+}
