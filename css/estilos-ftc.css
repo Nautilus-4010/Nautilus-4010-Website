@@ -69,7 +69,6 @@ header .centre {
 
 #equipos-ftc .flexbox > img {
     width: 50%;
-    min-width: 300px;
 }
   
 a.link-ftc {
@@ -94,6 +93,17 @@ a.link-ftc:hover {
 
     a.link-ftc {
         width: 35vw;
+    }
+
+    #equipos-ftc > .flexbox {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    #equipos-ftc .flexbox > img {
+        width: 100%;
+        margin-bottom: 1.5rem;
     }
 }
 
