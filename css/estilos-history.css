@@ -145,7 +145,11 @@ header div {
   padding: 1.2rem;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
+  .logo-temporada {
+    width: 25%;
+  }
+
   .info-regionales p {
     font-size: 1.1rem;
   }
@@ -157,5 +161,15 @@ header div {
 
   .info-temporada .flexbox {
     height: calc(56.25vw - 4.125rem);
+  }
+
+  .logo-temporada img {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .logo-temporada img {
+    padding: 0.7rem;
   }
 }
