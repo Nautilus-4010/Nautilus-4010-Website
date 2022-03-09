@@ -146,7 +146,6 @@ nav.sin-fondo {
 
 section.redes-sociales {
   background-color: var(--negro-fondo);
-  border-top: 0.3rem solid var(--amarillo);
 }
 
 h2.redes-sociales {
@@ -155,48 +154,15 @@ h2.redes-sociales {
   margin-bottom: 3rem;
 }
 
-/****************************************
-*                                       *
-*                Galeria                *
-*                                       *
-*****************************************/
-
-.galeria-fotos {
-  width: 92vw;
-  display: grid;
-  grid: auto-flow / repeat(3, 28vw);
-  gap: 4vw;
-  margin: 4rem auto 0;
-}
-
-#galeria {
-  background-color: var(--negro-fondo);
-}
-
-#galeria h2 {
-  color: var(--gris);
-  font-weight: 400;
-  margin: 2rem auto;
-}
-
-@media screen and (max-width: 893px) {
-  .galeria-fotos {
-    grid-template-columns: repeat(2, 40vw);
-    gap: 12vw;
-  }
-}
-
-@media screen and (max-width: 627px) {
-  .galeria-fotos {
-    grid-template-columns: 92vw;
-  }
-}
-
 /***************************************
 *                                      *
 *           Patrocinadores             *
 *                                      *
 ****************************************/
+
+.primer-nivel, .segundo-nivel {
+  margin: 1.5rem 0;
+}
 
 #patrocinadores {
   background-color: #fff;
@@ -210,6 +176,11 @@ h2.redes-sociales {
 .primer-nivel img {
   width: 30%;
   min-width: 140px;
+}
+
+.segundo-nivel img {
+  width: 21%;
+  min-width: 85px;
 }
 
 #logo-tec {
@@ -292,4 +263,31 @@ h2.redes-sociales {
   #fondo-comunicacion h3, #fondo-axm h3 {
     font-size: 2.5rem;
   }
+}
+
+/***************************************
+*                                      *
+*                  FTC                 *
+*                                      *
+****************************************/
+
+#ftc {
+  background-color: var(--negro-fondo);
+  border-top: 0.3rem solid var(--amarillo);
+}
+
+#ftc * {
+  color: #fff;
+}
+
+#ftc h2 {
+  color: var(--amarillo);
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+#ftc p {
+  font-weight: 300;
+  margin: 2rem auto 1.5rem;
 }

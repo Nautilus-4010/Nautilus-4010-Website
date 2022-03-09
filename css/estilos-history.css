@@ -89,91 +89,87 @@ header div {
   font-weight: 300;
 }
 
-/***************************************
-*                                      *
-*           Patrocinadores             *
-*                                      *
-****************************************/
+/****************************************
+*                                       *
+*             Generations               *
+*                                       *
+*****************************************/
 
-.primer-nivel, .segundo-nivel {
-  margin: 1.5rem 0;
+.img-filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 56.25vw;
 }
 
-#patrocinadores {
-  background-color: #fff;
+.info-regionales {
+  align-self: flex-start;
 }
 
-#patrocinadores img {
-  display: block;
-  margin: 0.5rem 0;
+.info-temporada {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.primer-nivel img {
-  width: 30%;
-  min-width: 140px;
-}
-
-.segundo-nivel img {
-  width: 21%;
-  min-width: 85px;
-}
-
-#logo-tec {
+.logo-temporada {
+  align-self: flex-end;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
   width: 20%;
-  min-width: 95px;
 }
 
-/***************************************
-*                                      *
-*                  FTC                 *
-*                                      *
-****************************************/
-
-#ftc {
-  background-color: var(--negro-fondo);
+.info-regionales li {
+  color: var(--blanco-texto);
 }
 
-#ftc * {
-  color: #fff;
+.info-regionales p {
+  font-size: 1.2rem;
 }
 
-#ftc h2 {
+.info-temporada h2 {
   color: var(--amarillo);
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-#ftc p {
+  padding: 1.5rem 0;
   font-weight: 300;
-  margin: 2rem auto 1.5rem;
 }
 
-#ftc .flexbox {
-  align-items: stretch;
+.info-temporada .flexbox {
   justify-content: space-between;
-  max-width: 35rem;
-  margin:0 auto 2rem;
+  height: calc(56.25vw - 6rem);
 }
 
-a.link-ftc {
-  background-color: var(--blanco-texto);
-  display: block;
+.info-temporada h2 span, .info-regionales p {
+  color: var(--gris);
+}
+
+.logo-temporada img {
   box-sizing: border-box;
-  width: 45%;
-  min-width: 120px;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  opacity: 0.85;
+  padding: 1.2rem;
 }
 
-a.link-ftc:hover {
-  opacity: 1;
+@media screen and (max-width:600px) {
+  .logo-temporada {
+    width: 25%;
+  }
+
+  .info-regionales p {
+    font-size: 1.1rem;
+  }
+
+  .info-temporada h2 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+
+  .info-temporada .flexbox {
+    height: calc(56.25vw - 4.125rem);
+  }
+
+  .logo-temporada img {
+    padding: 1rem;
+  }
 }
 
-span.hardlus {
-  color: #c00000 !important;
-}
-
-span.naubots {
-  color: #f07439 !important;
+@media screen and (max-width:425px) {
+  .logo-temporada img {
+    padding: 0.7rem;
+  }
 }

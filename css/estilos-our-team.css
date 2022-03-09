@@ -25,6 +25,21 @@ header p {
 #link-our-team {
   text-decoration: underline;
 }
+/****************************************
+*                                       *
+*             Years Navbar              *
+*                                       *
+*****************************************/
+
+#year-btns button {
+  background-color: var(--negro);
+  font-size: 1.5rem;
+}
+
+#year-btns .active {
+  color: var(--amarillo);
+  font-weight: 500;
+}
 
 /****************************************
 *                                       *
