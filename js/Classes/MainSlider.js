@@ -1,5 +1,8 @@
 class MainSlider {
   IMAGES = [
+    "mty_2022.jpg",
+    "fll2022.jpg",
+    "taller_2022.jpg",
     "equipo-biblioteca.jpg",
     "logo-taller.jpg",
     "regreso-taller.jpg",
@@ -13,8 +16,11 @@ class MainSlider {
   VIEWPORT_WIDTH_FOR_CAROUSEL = 627;
   DELAY_FOR_IMAGE_CHANGE = 5000;
 
-  constructor(galleryContainerId){
+  imgPath;
+
+  constructor(galleryContainerId, imgPath){
     this.currentImageIndex = 0;
+    this.imgPath = imgPath;
     this.galleryContainer = document.querySelector(galleryContainerId);
     this.imageElement = document.createElement("img");
     this.changeImage();
@@ -54,7 +60,7 @@ class MainSlider {
   }
 
   getImagePath(imageIndex){
-    const imgPath = "img/landing-page/" + this.IMAGES[imageIndex];
+    const imgPath = this.imgPath + this.IMAGES[imageIndex];
     return imgPath
   }
 }
