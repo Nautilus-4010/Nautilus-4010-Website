@@ -1,5 +1,6 @@
 const load2022TeamRooster = function(){
     const students = [
+      new Student("Abigail", "aby.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES, TeamAreas.INCLUSION], "Aby"),
       new Student("Alejandra", "ale.jpg", [TeamAreas.COMUNICACION]),
       new Student("Alexis", "alexis.jpg", [TeamAreas.INGENIERIA, TeamAreas.FINANZAS, TeamAreas.SOCIALES]),
       new Student("Ana", "ana.jpg", [TeamAreas.INGENIERIA]),
@@ -37,6 +38,7 @@ const load2022TeamRooster = function(){
       new Mentor("Antonio", "tony.jpg", [TeamAreas.SOCIALES, TeamAreas.INCLUSION], "Tony"),
       new Mentor("Carolina", "caro.jpg", [TeamAreas.INCLUSION, TeamAreas.SOCIALES], "Caro"),
       new Mentor("Diego", "dieguito.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES], "Dieguito"),
+      new Mentor("Ernesto", "ernesto.jpg", [TeamAreas.INGENIERIA], "Erno"),
       new Mentor("Jorge", "jorge.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES, TeamAreas.FINANZAS], "Jorgito"),
       new Mentor("Rodrigo", "rodrigo.jpg", [TeamAreas.INGENIERIA], "Ro"),
       new Mentor("Santiago", "santi.jpg", [TeamAreas.INGENIERIA, TeamAreas.COMUNICACION], "Santi")

@@ -1,5 +1,5 @@
 const main = function() {
-    const slider = new MainSlider(".galeria-fotos");
+    const slider = new MainSlider(".galeria-fotos", "img/gallery/");
     slider.renderContent();
     setInterval(() => {
         slider.changeImage();
