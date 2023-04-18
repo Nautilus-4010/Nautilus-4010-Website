@@ -2,6 +2,7 @@ const roosterNavBtns = document.querySelectorAll("#year-btns button");
 
 function main() {
   const teamRoosters = new Map()
+  teamRoosters.set(2023, load2023TeamRooster());
   teamRoosters.set(2022, load2022TeamRooster());
   teamRoosters.set(2021, load2021TeamRooster());
 
@@ -13,7 +14,7 @@ function main() {
     }
   }
 
-  higlightBtnAndRenderRooster(roosterNavBtns[0], teamRoosters.get(2022));
+  higlightBtnAndRenderRooster(roosterNavBtns[0], teamRoosters.get(2023));
 }
 
 const higlightBtnAndRenderRooster = function(button, rooster){
