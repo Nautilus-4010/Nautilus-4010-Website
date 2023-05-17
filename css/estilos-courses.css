@@ -1,0 +1,32 @@
+h1 {
+    color: var(--gris);
+}
+
+#courses a {
+    color: var(--amarillo);
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid var(--amarillo);
+    border-radius: 5px;
+    margin: 1rem 0.5rem;
+    padding: 1.5rem 3rem;
+}
+
+#courses a:hover {
+    color: var(--negro);
+    background-color: var(--amarillo);
+}
+
+@media screen and (max-width: 730px) {
+    #courses a {
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #courses a {
+        width: 40%;
+        min-width: 230px;
+    }
+}
