@@ -1,0 +1,58 @@
+header, #resources {
+    background-color: var(--negro-fondo);
+}
+
+h1 {
+    color: var(--amarillo);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.resource-card {
+    width: 28%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-sizing: border-box;
+    margin: 1.5rem 1rem;
+}
+
+.type-description {
+    opacity: 0.5;
+}
+
+#resources {
+    padding-top: 0;
+}
+
+header .centre {
+    border-bottom: 1px solid var(--amarillo);
+}
+
+.resource-card a {
+    font-size: 0.9rem;
+}
+
+.resource-card p {
+    font-size: 0.8rem;
+}
+
+#resources .flexbox {
+    justify-content: left;
+}
+
+@media screen and (max-width: 800px) {
+    .resource-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .resource-card {
+        width: 300px;
+    }
+
+    #resources .flexbox {
+        justify-content: center;
+    }
+}
