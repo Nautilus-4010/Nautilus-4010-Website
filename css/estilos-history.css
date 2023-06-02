@@ -7,7 +7,7 @@
 header {
   height: 80vh;
   max-height: 100vw;
-  background-image: url(../img/history/girl-stem.jpg);
+  background-image: url(../img/history/coaches.JPG);
   background-size: cover;
   background-position: 55% 80%;
 }
@@ -58,7 +58,7 @@ header div {
 }
 
 #premios {
-  background-image: url(../img/history/chairman-power-up.jpg);
+  background-image: url(../img/history/2023.jpg);
   background-size: cover;
   background-position: 50% 0;
 }
@@ -107,6 +107,14 @@ header div {
 .info-temporada {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo-temporada {
+  align-self: flex-end;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20%;
 }
 
 .logo-temporada {

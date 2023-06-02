@@ -1,17 +1,27 @@
 class MainSlider {
   IMAGES = [
+    "Santi_vic.jpg",
+    "Agus.jpg",
+    "robot.jpg",
+    "taller_prof.jpg",
+    "equipo_gradas.jpg",
     "mty_2022.jpg",
+    "robot_red.jpg",
     "fll2022.jpg",
     "taller_2022.jpg",
+    "fuego.jpg",
     "equipo-biblioteca.jpg",
     "logo-taller.jpg",
+    "Ocuiland.jpg",
     "regreso-taller.jpg",
     "driver-station.jpg",
+    "Alejandro.jpg",
     "taller-mecanica.jpg",
     "electronica-taller.jpg",
     "girl-stem.jpg",
     "servicio-social.jpg",
-    "trabajo-taller.jpg"
+    "trabajo-taller.jpg",
+    "paleta.jpg"
   ];
   VIEWPORT_WIDTH_FOR_CAROUSEL = 627;
   DELAY_FOR_IMAGE_CHANGE = 5000;

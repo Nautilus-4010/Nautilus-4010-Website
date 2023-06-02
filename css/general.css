@@ -74,6 +74,11 @@ footer {
   color: var(--amarillo);
 }
 
+.texto-amarillo2 {
+  color: var(--amarillo);
+  text-align: right;
+}
+
 a.btn-link {
   display: block;
   margin: 0 1rem;
@@ -112,7 +117,7 @@ nav .btn-link:hover {
 
 #site-map a {
   color: var(--gris);
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   margin: 1rem 0;
 }

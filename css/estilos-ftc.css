@@ -24,9 +24,21 @@ header p {
 }
 
 header .centre {
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ftc{
     background-image: url("../img/logos/ftc/ftc.png");
     background-position: right center;
     background-size: contain;
+    background-repeat: no-repeat;
+}
+.vex{
+    background-image: url("../img/logos/vex/vex-robotics.png");
+    background-position: right center;
+    background-size: 150px 75px;
     background-repeat: no-repeat;
 }
 
@@ -68,7 +80,8 @@ header .centre {
 }
 
 #equipos-ftc .flexbox > img {
-    width: 50%;
+    width: 45%;
+    height: auto;
 }
   
 a.link-ftc {
@@ -115,7 +128,8 @@ a.link-ftc:hover {
 
 #lag {
     background-size: cover;
-    background-image: url("../img/ftc/poster_lag.png");
+    background-image: url("../img/ftc/Like_a_girl.png");
+    background-position: left;
     box-sizing: border-box;
     height: 56.25vw;
 }

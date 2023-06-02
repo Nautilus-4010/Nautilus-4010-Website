@@ -11,7 +11,7 @@ const load2022TeamRooster = function(){
       new Student("Celeste", "celeste.jpg", [TeamAreas.FINANZAS, TeamAreas.SOCIALES, TeamAreas.INCLUSION], "Cel"),
       new Student("Cinthya", "cinthya.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES], "Cin"),
       new Student("Dafnné", "dafne.jpg", [TeamAreas.FINANZAS, TeamAreas.SOCIALES, TeamAreas.COMUNICACION], "Daf"),
-      new Student("Damián", "damian.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES]),
+      new Student("Damian", "damian.jpg", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES]),
       new Student("David", "david.jpg", [TeamAreas.INGENIERIA, TeamAreas.FINANZAS, TeamAreas.SOCIALES]),
       new Student("Emiliano", "emiliano.jpg", [TeamAreas.INGENIERIA, TeamAreas.FINANZAS, TeamAreas.SOCIALES], "Emi"),
       new Student("Emma", "emma.jpg", [TeamAreas.INCLUSION]),

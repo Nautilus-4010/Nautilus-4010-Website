@@ -36,6 +36,7 @@
     <!-- GENERAL CONFIGS -->
     <title>Nautilus 4010</title>
     <link rel="stylesheet" type="text/css" href="css/estilos-index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   </head>
   <body style="background-color: #040000;">
     
@@ -51,7 +52,7 @@
         </div>
         <div class="flexbox" id="nav-links">
           <a id="link-our-team" class="btn-link" href="our_team.html">Equipo</a>
-          <a id="link-ftc" class="btn-link" href="ftc.html">FTC</a>
+          <a id="link-ftc" class="btn-link" href="ftc.html">Equipos</a>
           <a id="link-history" class="btn-link" href="history.html">Historia</a>
           <a id="link-gallery" class="btn-link" href="gallery.html">Galería</a>
         </div>
@@ -62,13 +63,16 @@
 
     <!-- Header -->
     <header id="fotos-equipo">
-    <div class="foto-pantalla" id="foto-regional-monterrey"></div>
-      <div class="foto-pantalla" id="foto-gradas"></div>
-      <div class="foto-pantalla" id="container-logo">
-        <div class="centre">
+      <!--id="foto-porra"-->
+    <div class="foto-pantalla" id="foto-porras"></div>
+    <div class="foto-pantalla" id="foto-gradas"></div>
+    <div class="foto-pantalla" id="foto-monterrey"></div>
+
+        <div class="foto-pantalla" id="container-logo">
+         <div class="centre">
           <img src="img/logos/Nautilus-amarillo.png" alt="" id="logo-grande">
+          </div>
         </div>
-      </div>
     </header>
     <!-- Header -->
 
@@ -94,9 +98,13 @@
           <h3>Visión</h3>
           <p>Para 2025 seremos el equipo FIRST con mayor impacto, crecimiento y desarrollo de habilidades STEM y responsabilidad social en México. Queremos generar un cambio en nuestra comunidad creando agentes de cambio inspiradores y comprometidos con los ideales y valores del equipo.</p>
         </div>
+
+        <!--
+          ERROR EN LA FECHA 
+        -->
         <div class="card">
         <h3>Alcance</h3>
-        <p>En <?= (date('Y') - 2011) ?> años de historia, Nautilus 4010 ha tenido un alcance de 100,000 personas impactando a niños y jóvenes de toda la República Mexicana.</p>
+        <p>En <span style="color: white" id="annos"></span> años de historia, Nautilus 4010 ha tenido un alcance de 100,000 personas impactando a niños y jóvenes de toda la República Mexicana.</p>
         </div>
       </div>
       <p></p>
@@ -131,6 +139,11 @@
             <p>Redes sociales, documentación, imagen, fotografía.</p>
           </div>
         </div>
+        <div class="area" id="fondo-inclusion">
+          <div>
+            <h3>Diversidad e inclusión</h3>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Areas -->
@@ -138,8 +151,14 @@
     <!-- FTC -->
     <section id="ftc">
       <div class="centre">
-        <a href="ftc.html"><h2>Conoce a nuestros equipos de FTC</h2></a>
-        <img src="img/landing-page/ftc_toluca_2022.jpeg" alt="Naubots y Hardlus en el regional de Toluca 2022">
+        <a href="ftc.html"><h2>Conoce a nuestros equipos</h2></a>
+        <div class="slideshow">
+          <center>
+          <img src="img/landing-page/nacional.jpg" alt="Imagen 2">
+          <img src="img/landing-page/equipo_vex.jpg" alt="Imagen 3">
+        </center>
+        </div>
+
       </div>
     </section>
     <!-- FTC -->
@@ -150,23 +169,59 @@
         <h2>Alianzas Estratégicas</h2>
         <div class="flexbox primer-nivel">
           <img src="img/patrocinadores/Qualcomm.png" alt="Qualcomm">
-          <img src="img/patrocinadores/motorola-solutions-foundation.png" alt="Motorola Solutions Foundation">
-          <img src="img/patrocinadores/tec_monterrey.png" alt="Tecnológico de Monterrey" id="logo-tec">
-          <img src="img/patrocinadores/fundacion-azteca.png" alt="Fundación Azteca de Grupo Salinas">
-          <img src="img/patrocinadores/ni-logo.jpg" alt="National Instruments">
-          <img src="img/patrocinadores/six_flags.png" alt="Six Flags México">
+          <img src="img/patrocinadores/femsa.png" alt="Femsa">
+          <img src="img/patrocinadores/gm.png" alt="General Motors">
+          <img src="img/patrocinadores/Haas.png" alt="Haas">
+          <img src="img/patrocinadores/robotix.png" alt="Robotix Impacta tu mundo">
         </div>
         <div class="flexbox segundo-nivel">
-          <img src="img/patrocinadores/de_mano_a_mano.jpg" alt="De Mano a Mano">
-          <img src="img/patrocinadores/robotix.png" alt="Robotix Impacta tu mundo">
-          <img src="img/patrocinadores/solid-works.png" alt="Solidworks">
+          <img src="img/patrocinadores/six_flags.png" alt="Six Flags">
           <img src="img/patrocinadores/hogaresprovidencia.png" alt="Hogares Providencia I. A. P Padre Chinchachoma. Por una vida integra y digna. Niños y niñas descubriendo la alegría por vivir">
-          <img src="img/patrocinadores/ge_logo.png" alt="G E">
-          <img src="img/patrocinadores/wv_logo.svg" alt="World Vision">
-          <img src="img/patrocinadores/330-ohms.png" alt="330 ohms">
+          <img src="img/patrocinadores/solatec.png" alt="Solatec">
+          <img src="img/patrocinadores/home.png" alt="Home de estrellas">
+          <img src="img/patrocinadores/Printingshop.png" alt="Printingshop">
+          <img src="img/patrocinadores/flame_out.png" alt="Flame out">
         </div>
+        <h3>Se parte de nuestras alianzas</h3>
+        <button class="boton" onclick="mostrarFormulario()">Mostrar formulario</button>
+      <div class="formulario" id="formulario" style="display:none;">
+        <form action="https://formsubmit.co/pruebas.testing.nautilus@gmail.com" method="POST" name="formDatosPersonales" id="formulario">
+
+          <label for="Nombre">Nombre</label>
+          <input type="text" name="Nombre" id="nombre" placeholder="Escribe tu nombre" required><br>
+
+          <label for="Correo">Email</label>
+          <input type="email" name="Correo" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+
+          <label for="Empresa">Empresa</label>
+          <input type="text" name="Empresa" id="empresa" placeholder="Empresa" required><br>
+
+          <label for="asunto">Asunto</label>
+          <select name="asunto" id="asunto">
+            <option value="technical assistance">Asistencia Tecnica</option>
+            <option value="online menoring">Mentoreo</option>
+            <option value="sponsoring">Patrocinio</option>
+            <option value="other">Otro</option>
+          </select><br> 
+          <div id="otherOptionDiv" style="display: none;">
+            <input type="text" name="OtherOption" id="otherOption" placeholder="Especifica">
+          </div>
+
+          <div style="display: flex; align-items: center;">
+          <label for="Mensaje">Mensaje</label>
+          <!--<input type="text" name="Mensaje" id="mensaje" placeholder="Escribe el mensaje">-->
+          <textarea name="Mensaje" id="mensaje" placeholder="Escribe tu mensaje" required oninput="autoResize(this)"></textarea>
+          </div>
+  
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit" value="Enviar" id="button">Submit</button>
+        </form>
       </div>
+    </div>
     </section>
+    
     <!-- Patrocinadores -->
 
     <!-- Redes sociales -->
@@ -177,24 +232,40 @@
           <div class="redes-sociales">
             <a href="https://www.instagram.com/nautilus_4010/" target="_blank">
               <div class="flexbox">
-                <img src="img/iconos/instagram.svg" alt="Siguenos en Instagram">
-                <h6 class="link">nautilus_4010</h6>
+                <i class="bi bi-instagram" style="font-size: 2rem; color: #f2df0c"></i>
+                <h6 class="link">&nbsp;nautilus_4010</h6>
               </div>
             </a>
           </div>
           <div class="redes-sociales">
             <a href="https://twitter.com/frcnautilus4010" target="_blank">
               <div class="flexbox">
-                <img src="img/iconos/twitter.svg" alt="Siguenos en Twitter">
-                <h6 class="link">@FRCNautilus4010</h6>
+                <i class="bi bi-twitter" style="font-size: 2rem; color: #f2df0c"></i>
+                <h6 class="link"> @FRCNautilus4010</h6>
               </div>
             </a>
           </div>
           <div class="redes-sociales">
             <a href="https://www.facebook.com/nautilus4010/" target="_blank">
               <div class="flexbox">
-                <img src="img/iconos/facebook.svg" alt="Siguenos en Facebook">
-                <h6 class="link">Nautilus 4010</h6>
+                <i class="bi bi-facebook" style="font-size: 2rem; color: #f2df0c"></i>
+                <h6 class="link">&nbsp;Nautilus 4010</h6>
+              </div>
+            </a>
+          </div>
+          <div class="redes-sociales">
+            <a href="https://www.youtube.com/@Nautilus4010" target="_blank">
+              <div class="flexbox">
+                <i class="bi bi-youtube" style="font-size: 2rem; color: #f2df0c"></i>
+                <h6 class="link">&nbsp;Nautilus 4010</h6>
+              </div>
+            </a>
+          </div>
+          <div class="redes-sociales">
+            <a href="https://www.tiktok.com/@nautilus_4010" target="_blank">
+              <div class="flexbox">
+                <i class="bi bi-tiktok" style="font-size: 2rem; color: #f2df0c"></i>
+                <h6 class="link">&nbsp;Nautilus 4010</h6>
               </div>
             </a>
           </div>
@@ -204,23 +275,25 @@
     <!-- Redes sociales -->
 
     <footer>
-
-    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
-
-    <div class="centre" id="site-map">
-      <a href="./index.html">Inicio</a>
+      <div class="centre" id="site-map">
+        <a href="./index.html">Inicio</a>
         <a href="./our_team.html">Equipo</a>
-        <a href="./ftc.html">FTC</a>
+        <a href="./ftc.html">Equipos</a>
         <a href="./history.html">Historia</a>
         <a href="./gallery.html">Galeria</a>
         <a href="./reglas_uno.html">UNO</a>
-    </div>
-      
+        <!--
+          hacer nueva pestaña para "impacto"(meter FLL, FTC)
+        -->
+      </div>
+
       <div class="centre firma flexbox">
         <a href="https://diegomont.github.io" class="firma">&lt;/&gt; with <span id="corazon" class="firma">&#9829;</span> by <span class="firma">DiegoMont</span></a>
       </div>
-    </footer>
+      
+      <div>Icons from <a href="https://icons.getbootstrap.com" title="bootstrap-icons">bootstrap</a>
 
+    </footer>
     <!-- Scripts -->
     <script src="js/script-index.js" charset="utf-8"></script>
     <!-- Scripts -->

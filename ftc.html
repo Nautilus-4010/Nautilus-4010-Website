@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z48VF43JKW"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/javascripts/jquery.carousel-ticker.js"></script>
+    <script src="js/script-ftc.js"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -33,6 +36,7 @@
     <!-- GENERAL CONFIGS -->
     <title>Nautilus 4010 | FTC</title>
     <link rel="stylesheet" type="text/css" href="css/estilos-ftc.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   </head>
   <body style="background-color: #040000;">
     
@@ -48,7 +52,7 @@
         </div>
         <div class="flexbox" id="nav-links">
             <a id="link-our-team" class="btn-link" href="our_team.html">Equipo</a>
-            <a id="link-ftc" class="btn-link" href="ftc.html">FTC</a>
+            <a id="link-ftc" class="btn-link" href="ftc.html">Equipos</a>
             <a id="link-history" class="btn-link" href="history.html">Historia</a>
             <a id="link-gallery" class="btn-link" href="gallery.html">Galería</a>
         </div>
@@ -60,7 +64,12 @@
     <!-- Header -->
     <header>
       <div class="centre">
-        <p>Nuestros miembros rookies del equipo aprenden y practican sus habilidades en las diferentes áreas del equipo al participar en nuestros dos equipos de FIRST Tech Challenge: Naubots 15706 y Hardlus 15704</p>
+        <div class="ftc">
+          <p>Nuestros miembros rookies del equipo aprenden y practican sus habilidades en las diferentes áreas del equipo al participar en nuestros dos equipos de FIRST Tech Challenge</p><br>
+        </div>
+        <div class="vex">
+          <p>Nuestros miembros rookies del equipo aprenden y practican sus habilidades en las diferentes áreas del equipo al participar en nuestros dos equipos de FIRST Tech Challenge: Naubots 15706 y Hardlus 15704</p><br>
+        </div>
       </div>
     </header>
     <!-- Header -->
@@ -69,27 +78,23 @@
       <div class="ftc-teams-links centre">
         <h2>Conoce más de nuestros equipos</h2>
         <div class="flexbox ftc-btns">
-          <a href="hardlus15704/index.php" target="_blank" class="link-ftc">
-            <img src="img/logos/hardlus.png" alt="Hardlus 15704">
+          <a href="#" target="_blank" class="">
+            <img src="img/logos/21735.png" alt="">
           </a>
-          <a href="naubots15706/index.php" target="_blank" class="link-ftc">
-            <img src="img/logos/naubots2.png" alt="Naubots 15706">
+          <a href="#" target="_blank" class="">
+            <img src="img/logos/vex/vex-robotics.png" alt="">
           </a>
         </div>
       </div>
-      <div class="flexbox">
-        <img src="img/ftc/hardlus2022.jpg" alt="">
-        <img src="img/ftc/naubots2022.jpg" alt="">
+      <div class="flexbox ">
+          <img src="img/ftc/vex.jpg">
+          <img src="img/ftc/21735.jpg">
       </div>
     </section>
 
-    <section id="lag">
-      <div class="centre">
-        <h2>Like <span>A</span> Girl</h2>
-        <p class="parrafo">“Like A Girl” busca inspirar e impulsar a mujeres interesadas en STEM a incursionar en alguna de sus áreas.</p>
-      </div>
-    </section>
-
+    <section id="lag"></section>
+    <section></section>
+    <!--
     <section id="inspire-exchange">
       <div class="centre">
         <h2>THE INSPIRE EXCHANGE</h2>
@@ -99,6 +104,7 @@
         <p class="parrafo">POR HARDLUS 15704 Y THE COCONUTS 2486</p>
       </div>
     </section>
+  -->
 
     <footer>
 
@@ -107,7 +113,7 @@
         <div class="redes-sociales">
           <a href="https://www.instagram.com/nautilus_4010/" target="_blank">
             <div class="flexbox">
-              <img src="img/iconos/instagram.svg" alt="Siguenos en Instagram">
+              <i class="bi bi-instagram" style="font-size: 2rem; color: #f2df0c"></i>
               <!-- <h6 class="link">nautilus_4010</h6> -->
             </div>
           </a>
@@ -115,7 +121,7 @@
         <div class="redes-sociales">
           <a href="https://twitter.com/frcnautilus4010" target="_blank">
             <div class="flexbox">
-              <img src="img/iconos/twitter.svg" alt="Siguenos en Twitter">
+              <i class="bi bi-twitter" style="font-size: 2rem; color: #f2df0c"></i>
               <!-- <h6 class="link">@FRCNautilus4010</h6> -->
             </div>
           </a>
@@ -123,8 +129,22 @@
         <div class="redes-sociales">
           <a href="https://www.facebook.com/nautilus4010/" target="_blank">
             <div class="flexbox">
-              <img src="img/iconos/facebook.svg" alt="Siguenos en Facebook">
+              <i class="bi bi-facebook" style="font-size: 2rem; color: #f2df0c"></i>
               <!-- <h6 class="link">Nautilus 4010</h6> -->
+            </div>
+          </a>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.youtube.com/@Nautilus4010" target="_blank">
+            <div class="flexbox">
+              <i class="bi bi-youtube" style="font-size: 2rem; color: #f2df0c"></i>
+            </div>
+          </a>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.tiktok.com/@nautilus_4010" target="_blank">
+            <div class="flexbox">
+              <i class="bi bi-tiktok" style="font-size: 2rem; color: #f2df0c"></i>
             </div>
           </a>
         </div>
@@ -133,7 +153,7 @@
       <div class="centre" id="site-map">
         <a href="./index.html">Inicio</a>
         <a href="./our_team.html">Equipo</a>
-        <a href="./ftc.html">FTC</a>
+        <a href="./ftc.html">Equipos</a>
         <a href="./history.html">Historia</a>
         <a href="./gallery.html">Galeria</a>
         <a href="./reglas_uno.html">UNO</a>
@@ -143,7 +163,7 @@
         <a href="https://diegomont.github.io" class="firma">&lt;/&gt; with <span id="corazon" class="firma">&#9829;</span> by <span class="firma">DiegoMont</span></a>
       </div>
       
-      <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+      <div>Icons from <a href="https://icons.getbootstrap.com" title="bootstrap-icons">bootstrap</a>
       
       <script src="js/interactividad.js"></script>
       <!-- GENERAL FOOTER -->

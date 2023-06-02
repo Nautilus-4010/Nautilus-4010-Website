@@ -39,17 +39,32 @@ nav.sin-fondo {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-#foto-regional-monterrey {
-  background-image: url(../img/landing-page/regional-monterrey.jpg);
-  background-position: bottom center;
+#foto-porras {
+  background-image: url(../img/landing-page/porra-gradas.jpg);
+  animation-name: esconder-foto;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 #foto-gradas {
-  background-image: url(../img/landing-page/porra-gradas.jpg);
-  background-position: 50% 100%;
+  background-image: url(../img/landing-page/gradas_2.jpg);
+  animation-duration: 8s;
+  animation-name: esconder-foto;
+  animation-iteration-count: infinite;
+}
+
+#foto-monterrey {
+  background-image: url(../img/landing-page/regional-monterrey.jpg);
+  background-position: bottom center;
+  opacity: 0;
+  animation-iteration-count: infinite;
+}
+
+#foto-monterrey-2023 {
+  background-image: url(../img/landing-page/gradas_2.jpg);
   opacity: 0;
   animation-name: esconder-foto;
-  animation-duration: 10s;
+  animation-duration: 8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
@@ -230,7 +245,7 @@ h2.redes-sociales {
 }
 
 #fondo-ingenieria {
-  background-image: url(../img/landing-page/ingenieria.jpg);
+  background-image: url(../img/landing-page/NAUTILUS.jpg);
 }
 
 #fondo-negocios {
@@ -244,8 +259,12 @@ h2.redes-sociales {
 }
 
 #fondo-comunicacion {
-  background-image: url(../img/landing-page/comunicacion.jpg);
-  background-position-y: 30%;
+  background-image: url(../img/landing-page/comunicacion.jpeg);
+  background-position-y: 45%;
+}
+#fondo-inclusion {
+  background-image: url("../img/landing-page/Inclucion.JPG");
+  background-position-y: 60%;
 }
 
 #areas h2 {
@@ -290,4 +309,155 @@ h2.redes-sociales {
 #ftc p {
   font-weight: 300;
   margin: 2rem auto 1.5rem;
+}
+*{box-sizing:border-box;}
+
+form{
+	padding:aut;
+	border-radius:10px;
+	background-color:#ccc;
+  margin-left:auto; margin-right:0;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+  text-align: left;
+	width:180px;
+  height: 33px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form button[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form button[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#myButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+/* Estilos para el formulario */
+.formulario {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: left;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+#nombre{
+  margin-left: 55px;
+}
+#email{
+  margin-left: 55px;
+}
+#empresa{
+  margin-left: 55px;
+}
+#mensaje{
+  margin-left: 59px;
+  width: 200px;
+  height: 39px;
+  overflow: hidden;
+  resize: none;
+}
+#button{
+  color: var(--amarillo);
+}
+#asunto{
+  margin-left: 55px;
+  border-radius: 3px;
+  width: 179px;
+  background-color: #f2f2f2;
+}
+#otherOptionDiv input{
+  margin-left: 145px;
+  height: 35px;
+  margin-left: 143px;
+}
+.centre {
+  max-width: 1000px;
+  background-size: auto;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+.slideshow {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img:first-child {
+  opacity: 1;
 }
