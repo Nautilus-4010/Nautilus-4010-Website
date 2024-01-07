@@ -32,7 +32,7 @@ const load2023TeamRooster = function(){
     const mentors = [
       new Mentor("Rodrigo", "Rodrigo_Mentor.JPG", [TeamAreas.INGENIERIA], "Ro"),
       new Mentor("Santiago", "Santi_mentor.JPG", [TeamAreas.INGENIERIA, TeamAreas.COMUNICACION], "Santi"),
-      new Mentor("Ulises", "Uri.JPG", [TeamAreas.FINANZAS, TeamAreas.SOCIALES, TeamAreas.COMUNICACION]),
+      new Mentor("Ulises", "Uri.JPG", [TeamAreas.INGENIERIA, TeamAreas.FINANZAS, TeamAreas.SOCIALES]),
       new Mentor("Sara", "Sara_mentora.JPG", [TeamAreas.INGENIERIA, TeamAreas.SOCIALES], "Sara"),
       new Mentor("Ernesto", "Ernesto.JPG", [TeamAreas.INGENIERIA], "Erno"),
       new Mentor("Jose", "Jose.JPG", [TeamAreas.INGENIERIA], "Pepe Lalo"),
