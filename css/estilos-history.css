@@ -58,15 +58,13 @@ header div {
 }
 
 #premios {
-  background-image: url(../img/history/chairman-power-up.jpg);
+  background-image: url(../img/history/impact-charged-up.jpg);
   background-size: cover;
   background-position: 50% 0;
 }
 
 #descripcion-premios {
-  background-color: rgba(4, 0, 0, 0.5);
-  /*background-color: rgba(181, 181, 180, 0.5);
-  background-color: rgba(255, 255, 255, 0.5);*/
+  background-color: rgba(4, 0, 0, 0.3);
   padding: 2rem 0;
   align-items: start;
 }
