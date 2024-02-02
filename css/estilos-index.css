@@ -170,12 +170,16 @@ h2.redes-sociales {
 
 #patrocinadores img {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
 }
 
-.primer-nivel img {
+.primer-nivel img, .primer-nivel h3 {
   width: 30%;
   min-width: 140px;
+}
+
+.primer-nivel h3 {
+  margin-top: 2rem
 }
 
 .segundo-nivel img {
