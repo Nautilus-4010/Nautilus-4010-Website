@@ -953,7 +953,7 @@ footer #iconos{
 
     #fixed-section-content1 h3 {
         color: rgba(255, 255, 255, 1);
-        transition: all 0.3s ease;
+        
     }
 
     /*Section2*/
@@ -994,7 +994,6 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
 }
 
 #fixed-section-content2{
@@ -1014,12 +1013,12 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content2 h3 {
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section2:before{
@@ -1031,7 +1030,7 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content2 p {
@@ -1040,12 +1039,12 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content2 h3 {
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 /*Section3*/
@@ -1086,7 +1085,7 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content3{
@@ -1106,12 +1105,12 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content3 h3 {
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section3:before{
@@ -1123,7 +1122,7 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content3 p {
@@ -1132,12 +1131,12 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content3 h3 {
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 /*Section4*/
@@ -1178,7 +1177,7 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content4{
@@ -1198,12 +1197,12 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content4 h3 {
     color: rgba(255, 255, 255, 0);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section4:before{
@@ -1215,7 +1214,7 @@ footer #iconos{
     height: 50vh;
     width: 100vw;
     z-index: 2;
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content4 p {
@@ -1224,18 +1223,383 @@ footer #iconos{
     text-align: center; /* Centra el texto dentro del párrafo */
     font-size: large;
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 #fixed-section-content4 h3 {
     color: rgba(255, 255, 255, 1);
-    transition: all 0.3s ease;
+
 }
 
 #Banner #menu-bar img{
     width: 40%;
 }
 
+/*Section1*/
+    #fixed-section1:hover {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        position: relative;
+    }
 
+    #fixed-section1:hover::after{
+        content: "";
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+        display: flex;
+        height: 50vh;
+        width: 100vw;
+        position: absolute;
+        clip-path: inset(0);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/img/data_analytics.jpg');
+        z-index: 1;
+    }
+
+    #fixed-section1:hover::before{
+        top: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color:  rgba(49, 54, 56, 0);
+        height: 50vh;
+        width: 100vw;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+
+    #fixed-section-content1:hover{
+        position: relative;
+        display: flex;
+        z-index: 2;
+        height: 50vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #fixed-section-content1:hover p {
+        max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+        margin: 0 auto; /* Centra el párrafo horizontalmente */
+        text-align: center; /* Centra el texto dentro del párrafo */
+        font-size: large;
+        color: rgba(255, 255, 255, 0);
+        transition: all 0.3s ease;
+    }
+
+    #fixed-section-content1:hover h3 {
+        color: rgba(255, 255, 255, 0);
+        transition: all 0.3s ease;
+    }
+
+    #fixed-section1:hover:before{
+        top: 0;
+        left: 0;
+        content: "";
+        position: absolute;
+        background-color:  rgba(49, 54, 56, .7);
+        height: 50vh;
+        width: 100vw;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+
+    #fixed-section-content1:hover p {
+        max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+        margin: 0 auto; /* Centra el párrafo horizontalmente */
+        text-align: center; /* Centra el texto dentro del párrafo */
+        font-size: large;
+        color: rgba(255, 255, 255, 1);
+        transition: all 0.3s ease;
+    }
+
+    #fixed-section-content1:hover h3 {
+        color: rgba(255, 255, 255, 1);
+        
+    }
+
+    /*Section2*/
+#fixed-section2:hover {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+#fixed-section2:hover::after{
+    content: "";
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    clip-path: inset(0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/corazones_fuertes.jpg');
+    z-index: 1;
+}
+
+#fixed-section2:hover::before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, 0);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+#fixed-section-content2:hover{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fixed-section-content2:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section-content2:hover h3 {
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section2:hover:before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, .7);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+#fixed-section-content2:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+#fixed-section-content2:hover h3 {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+/*Section3*/
+#fixed-section3:hover {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+#fixed-section3:hover::after{
+    content: "";
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    clip-path: inset(0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/journey_space.webp');
+    z-index: 1;
+}
+
+#fixed-section3:hover::before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, 0);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+#fixed-section-content3:hover{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fixed-section-content3:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section-content3:hover h3 {
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section3:hover:before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, .7);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+#fixed-section-content3:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+#fixed-section-content3:hover h3 {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+/*Section4*/
+#fixed-section4:hover {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+#fixed-section4:hover::after{
+    content: "";
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    clip-path: inset(0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/universo_3_idiomas.jpg');
+    z-index: 1;
+}
+
+#fixed-section4:hover::before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, 0);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+#fixed-section-content4:hover{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fixed-section-content4:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section-content4:hover h3 {
+    color: rgba(255, 255, 255, 0);
+
+}
+
+#fixed-section4:hover:before{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color:  rgba(49, 54, 56, .7);
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+
+}
+
+#fixed-section-content4:hover p {
+    max-width: 70%; /* Ajusta el ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: large;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+#fixed-section-content4:hover h3 {
+    color: rgba(255, 255, 255, 1);
+
+}
 
 }
