@@ -60,7 +60,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/data_analytics.jpg');
+    background-image: url('/img/data_analytics.jpg');
     z-index: 1;
     background-position: -100%, 200%;
 }
@@ -152,7 +152,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/corazones_fuertes.jpg');
+    background-image: url('/img/corazones_fuertes.jpg');
     z-index: 1;
     background-position: 28% 50%;
     background-size: contain;
@@ -246,7 +246,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/journey_space.webp');
+    background-image: url('/img/journey_space.webp');
     z-index: 1;
     background-position: 70% 50%;
 }
@@ -339,7 +339,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/universo_3_idiomas.jpg');
+    background-image: url('/img/universo_3_idiomas.jpg');
     z-index: 1;
     background-position: 175% 50%;
 }
@@ -434,7 +434,7 @@ h1{
     margin: 0;
     padding: 0;
     background-attachment: fixed;
-    background-image: url('/Assets/images/Banner.png');
+    background-image: url('/img/Banner.png');
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -860,7 +860,7 @@ footer #iconos{
         background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
-        background-image: url('/Assets/images/data_analytics.jpg');
+        background-image: url('/img/data_analytics.jpg');
         z-index: 1;
     }
 
@@ -952,7 +952,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/corazones_fuertes.jpg');
+    background-image: url('/img/corazones_fuertes.jpg');
     z-index: 1;
 }
 
@@ -1044,7 +1044,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/journey_space.webp');
+    background-image: url('/img/journey_space.webp');
     z-index: 1;
 }
 
@@ -1136,7 +1136,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/universo_3_idiomas.jpg');
+    background-image: url('/img/universo_3_idiomas.jpg');
     z-index: 1;
 }
 
@@ -1213,7 +1213,7 @@ footer #iconos{
 
 #Banner #menu-bar #menu-button{
     content: "";
-    background-image: url('/Assets/images/Iconos/menu.png');
+    background-image: url('/img/Iconos/menu.png');
     position: absolute;
     top: 0;
     right: 0;
