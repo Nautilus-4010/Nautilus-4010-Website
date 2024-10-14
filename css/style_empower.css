@@ -1213,7 +1213,7 @@ footer #iconos{
 
 #Banner #menu-bar #menu-button{
     content: "";
-    background-image: url('/img/Iconos/menu.png');
+    background-image: url('/img/iconos/menu.png');
     position: absolute;
     top: 0;
     right: 0;
