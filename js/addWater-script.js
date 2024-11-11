@@ -116,14 +116,19 @@
 
 				const waterQuantity = parseInt(waterLabel.value, 10);
 
-				fetch('https://www.nautilus4010.com/', {
+				fetch('https://www.nautilus4010.com/add-water', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
 					},
 					body: JSON.stringify({ quantity: waterQuantity })
 				})
-				.then(response => response.json())
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Network response was not ok');
+					}
+					return response.json();
+				})
 				.then(data => {
 					if (data.success) {
 						message.textContent = 'Water quantity added successfully!';
