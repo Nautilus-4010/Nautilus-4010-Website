@@ -73,3 +73,25 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("No se encontraron los elementos content-1 y content-2");
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const waterSavedElement = document.getElementById('water-saved');
+    let waterQuantity = parseFloat(localStorage.getItem('waterQuantity')) / 5.3;
+    if (isNaN(waterQuantity) || waterQuantity <= 0) {
+        waterQuantity = 0;
+    }
+    if (waterSavedElement) {
+        const formattedWaterQuantity = parseFloat(waterQuantity.toFixed(1)).toLocaleString('en-US');
+        waterSavedElement.textContent = `${formattedWaterQuantity} botellas`;
+    }
+
+    let CO2 = waterQuantity * 0.210;
+    if (isNaN(CO2) || CO2 <= 0) {
+        CO2 = 0;
+    }
+    const co2SavedElement = document.getElementById('co2-saved');
+    if (co2SavedElement) {
+        const formattedCO2 = parseFloat(CO2.toFixed(1)).toLocaleString('en-US');
+        co2SavedElement.textContent = `${formattedCO2} kg de CO2`;
+    }
+});
