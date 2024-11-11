@@ -200,6 +200,21 @@ h1{
     font-size: 4vw;
 }
 
+#section-3 {
+    align-items: center;
+    justify-content:end;
+}
+
+#section-3::after {
+    background-image: url('/img/nautiwater/03.webp');
+}
+
+#section-3 .section-content p{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 4vw;
+}
+
 /*Footer*/
 
 footer{
@@ -315,8 +330,6 @@ footer #iconos{
     margin-left: 1vw;
 }
 
-
-
 /*Responsive*/
 
 @media (max-aspect-ratio: 17/16){
@@ -344,6 +357,12 @@ footer #iconos{
     }
 
     #section-2 .section-content p{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 6vh;
+    }
+
+    #section-3 .section-content p{
     margin-top: 5vh;
     margin-left: 5vw;
     font-size: 6vh;

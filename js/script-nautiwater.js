@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtener los elementos con los que quieres interactuar
     const content1 = document.getElementById('content-1');
     const content2 = document.getElementById('content-2');
+    const content3 = document.getElementById('content-3');
 
     if (content1 && content2) {
         console.log("Elementos encontrados:", content1, content2);
@@ -31,10 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     content1.style.transform = "translateX(100vw)";
                 }
 
-                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700) {
+                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700 && posicionActual > 1900) {
                     content2.style.transform = "translateX(-100vw)";
                 } else {
                     content2.style.transform = "translateX(0)";
+                }
+
+                if (posicionActual > activarAnimacionEn + 700) {
+                    content3.style.transform = "translateX(0vw)";
+                } else {
+                    content3.style.transform = "translateX(-100vw)";
                 }
             } else {
                 // Comportamiento para computadoras
@@ -46,10 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     content1.style.transform = "translateX(60vw)";
                 }
 
-                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700) {
-                    content2.style.transform = "translateX(-60vw)";
-                } else {
+                if (posicionActual < 1900 && posicionActual > activarAnimacionEn + 700) {
                     content2.style.transform = "translateX(0vw)";
+                } else {
+                    content2.style.transform = "translateX(-60vw)";
+                }
+
+                if (posicionActual > 1900) {
+                    content3.style.transform = "translateX(0vw)";
+                } else {
+                    content3.style.transform = "translateX(100vw)";
                 }
             }
 
