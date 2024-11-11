@@ -1,5 +1,10 @@
 console.log("Se inició el script");
 
+// Función para detectar si el dispositivo es móvil
+function esDispositivoMovil() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
 // Definir el valor cuando quieres activar la animación al hacer scroll
 const activarAnimacionEn = 300;  // Ajusta este valor según tus necesidades
 
@@ -16,22 +21,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const posicionActual = window.scrollY;
             console.log('Posición del scroll:', posicionActual);
 
-            // Animar el contenido de la primera sección
-            if (posicionActual >= activarAnimacionEn && posicionActual <= activarAnimacionEn + 900) {
-                console.log("Activando animación en content1");
-                content1.style.transform = "translateX(0vw)";
-            } else {
-                console.log("Desactivando animación en content1");
-                content1.style.transform = "translateX(60vw)";
-            }
+            if (esDispositivoMovil()) {
+                // Comportamiento para dispositivos móviles
+                console.log("Dispositivo móvil detectado");
+                // ...agrega aquí el comportamiento específico para móviles...
+                if (posicionActual < activarAnimacionEn + 700 && posicionActual > activarAnimacionEn) {
+                    content1.style.transform = "translateX(0)";
+                } else {
+                    content1.style.transform = "translateX(100vw)";
+                }
 
-            // Animar el contenido de la segunda sección de manera similar
-            if (posicionActual > activarAnimacionEn + 900) {
-                console.log("Activando animación en content2");
-                content2.style.transform = "translateX(0vw)";
+                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700) {
+                    content2.style.transform = "translateX(-100vw)";
+                } else {
+                    content2.style.transform = "translateX(0)";
+                }
             } else {
-                console.log("Desactivando animación en content2");
-                content2.style.transform = "translateX(-60vw)";
+                // Comportamiento para computadoras
+                console.log("Computadora detectada");
+                // ...agrega aquí el comportamiento específico para computadoras...
+                if (posicionActual < activarAnimacionEn + 900 && posicionActual > activarAnimacionEn) {
+                    content1.style.transform = "translateX(0vw)";
+                } else {
+                    content1.style.transform = "translateX(60vw)";
+                }
+
+                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 900) {
+                    content2.style.transform = "translateX(-60vw)";
+                } else {
+                    content2.style.transform = "translateX(0vw)";
+                }
             }
 
             // Imprimir si se está scrolleando
