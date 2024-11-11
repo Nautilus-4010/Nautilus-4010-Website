@@ -354,5 +354,19 @@ footer #iconos{
     height: min-content;
     margin: 1vw;
     margin-top: 1.5vw;
-}
+    }
+
+    footer #right-container img{
+
+    max-height: 11vh; /* Limita la altura máxima de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: contain;
+    }
+
+    footer #redes-sociales a img{
+    width: 2vh;
+    }
 }
