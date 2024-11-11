@@ -200,6 +200,123 @@ h1{
     font-size: 4vw;
 }
 
+/*Footer*/
+
+footer{
+    position: relative;
+    width: 100vw;
+    height: 26vw;
+    color: #e6d40d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: center;
+}
+footer a{
+    color: inherit; /* Hereda el color del elemento padre para que no tenga color específico */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    background: none; /* Quita el fondo si es necesario */
+    border: none; /* Quita el borde si es necesario */
+}
+
+footer ul{
+    list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Opcional: Elimina el padding predeterminado */
+            margin: 2; /* Opcional: Elimina el margen predeterminado */
+}
+
+footer #footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer #redes-sociales{
+    display: flex;
+    align-self:flex-end;
+}
+
+footer #redes-sociales a img{
+    width: 2vw;
+}
+
+footer #redes-sociales #youtube{
+    width: 2.6vw;
+}
+
+footer #opciones-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 18vw;
+
+}
+
+footer #opciones-footer li{
+    margin: 1.3vh;
+}
+
+footer li{
+    margin: 1%;
+}
+
+footer #right-container{
+    position: relative;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer #right-container #columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #right-container #columna li{
+    margin-right: 1vw;
+}
+
+footer #left-container{
+    position: relative;
+    display: flex;
+    width: 50vw;
+    height: max-content;
+    justify-content:right;
+}
+
+footer #right-container img{
+
+    max-height: 11vw; /* Limita la altura máxima de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: contain;
+}
+
+footer #FIRST{
+    position: absolute;
+    height: 16vw;
+    width: auto;
+    top: 20%;
+}
+
+footer #line{
+    width: 100vw;
+    height: 1vh;
+    background: #e6d40d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer #iconos{
+    color: #e6d40d59;
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+
+
 /*Responsive*/
 
 @media (max-aspect-ratio: 17/16){
