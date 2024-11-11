@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Comportamiento para computadoras
                 console.log("Computadora detectada");
                 // ...agrega aquí el comportamiento específico para computadoras...
-                if (posicionActual < activarAnimacionEn + 900 && posicionActual > activarAnimacionEn) {
+                if (posicionActual < activarAnimacionEn + 700 && posicionActual > activarAnimacionEn) {
                     content1.style.transform = "translateX(0vw)";
                 } else {
                     content1.style.transform = "translateX(60vw)";
                 }
 
-                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 900) {
+                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700) {
                     content2.style.transform = "translateX(-60vw)";
                 } else {
                     content2.style.transform = "translateX(0vw)";
