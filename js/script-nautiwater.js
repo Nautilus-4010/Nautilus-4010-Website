@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     content1.style.transform = "translateX(100vw)";
                 }
 
-                if (posicionActual >= activarAnimacionEn && posicionActual < activarAnimacionEn + 700 && posicionActual > 1900) {
-                    content2.style.transform = "translateX(-100vw)";
-                } else {
+                if (posicionActual < 1900 && posicionActual > activarAnimacionEn + 700) {
                     content2.style.transform = "translateX(0)";
+                } else {
+                    content2.style.transform = "translateX(-100vw)";
                 }
 
-                if (posicionActual > activarAnimacionEn + 700) {
+                if (posicionActual > 1900) {
                     content3.style.transform = "translateX(0vw)";
                 } else {
-                    content3.style.transform = "translateX(-100vw)";
+                    content3.style.transform = "translateX(100vw)";
                 }
             } else {
                 // Comportamiento para computadoras
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (posicionActual > 1900) {
                     content3.style.transform = "translateX(0vw)";
                 } else {
-                    content3.style.transform = "translateX(100vw)";
+                    content3.style.transform = "translateX(60vw)";
                 }
             }
 
