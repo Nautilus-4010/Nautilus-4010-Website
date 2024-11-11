@@ -116,7 +116,7 @@
 
 				const waterQuantity = parseInt(waterLabel.value, 10);
 
-				fetch('http://localhost:3000/add-water', {
+				fetch('https://www.nautilus4010.com/add-water', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
@@ -148,6 +148,6 @@
 					submitButton.disabled = false;
 				});
 			});
-		});
+			});
 
 })();
