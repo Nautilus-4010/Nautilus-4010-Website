@@ -116,7 +116,7 @@
 
 				const waterQuantity = parseInt(waterLabel.value, 10);
 
-				fetch('add-water', {
+				fetch('https://nautilus4010.com/add-water', {
 					method: 'PUT',
 					headers: {
 						'Content-Type': 'application/json'
