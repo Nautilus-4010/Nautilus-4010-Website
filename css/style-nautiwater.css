@@ -1,10 +1,25 @@
+@font-face {
+    font-family: 'Lovelo-Black';
+    src: url('fonts/Lovelo-Black.woff2') format('woff2'),
+         url('fonts/Lovelo-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColorTube';
+    src: url('fonts/ColorTube-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: rgba(38,40,45,255);
     overflow-x: hidden;
     overflow-y: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ColorTube', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1{
@@ -57,10 +72,11 @@ h1{
 }
 
 .section .section-content h4{
-    font-size: xxx-large;
-    max-width: 40vw;
+    font-size: xx-large;
+    max-width: 35vw;
     margin-left: 4vw;
     margin-bottom: 0;
+    font-family: 'Lovelo-Black', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .section .section-content p{
@@ -177,6 +193,10 @@ h1{
 #section-1 {
     align-items: center;
     justify-content:end;
+}
+
+#section-1 #content-1 p{
+    font-size: x-large;
 }
 
 #section-1::after {
